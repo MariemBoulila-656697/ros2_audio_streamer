@@ -1,0 +1,4 @@
+source;share/sound_play/environment/ament_prefix_path.sh
+source;share/sound_play/environment/library_path.sh
+source;share/sound_play/environment/path.sh
+source;share/sound_play/environment/pythonpath.sh

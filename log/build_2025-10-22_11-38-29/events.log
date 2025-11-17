@@ -1,0 +1,452 @@
+[0.000000] (-) TimerEvent: {}
+[0.002145] (audio_common_msgs) JobQueued: {'identifier': 'audio_common_msgs', 'dependencies': OrderedDict()}
+[0.002190] (audio_capture) JobQueued: {'identifier': 'audio_capture', 'dependencies': OrderedDict([('audio_common_msgs', '/home/mariem/ros2_ws/install/audio_common_msgs')])}
+[0.002205] (audio_play) JobQueued: {'identifier': 'audio_play', 'dependencies': OrderedDict([('audio_common_msgs', '/home/mariem/ros2_ws/install/audio_common_msgs')])}
+[0.002214] (audio_streamer) JobQueued: {'identifier': 'audio_streamer', 'dependencies': OrderedDict([('audio_common_msgs', '/home/mariem/ros2_ws/install/audio_common_msgs')])}
+[0.002223] (sound_play) JobQueued: {'identifier': 'sound_play', 'dependencies': OrderedDict([('audio_common_msgs', '/home/mariem/ros2_ws/install/audio_common_msgs')])}
+[0.002232] (audio_common) JobQueued: {'identifier': 'audio_common', 'dependencies': OrderedDict([('audio_common_msgs', '/home/mariem/ros2_ws/install/audio_common_msgs'), ('audio_capture', '/home/mariem/ros2_ws/install/audio_capture'), ('audio_play', '/home/mariem/ros2_ws/install/audio_play'), ('sound_play', '/home/mariem/ros2_ws/install/sound_play')])}
+[0.002243] (audio_common_msgs) JobStarted: {'identifier': 'audio_common_msgs'}
+[0.025322] (audio_common_msgs) JobProgress: {'identifier': 'audio_common_msgs', 'progress': 'cmake'}
+[0.035995] (audio_common_msgs) JobProgress: {'identifier': 'audio_common_msgs', 'progress': 'build'}
+[0.036971] (audio_common_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mariem/ros2_ws/build/audio_common_msgs', '--', '-j1', '-l1'], 'cwd': '/home/mariem/ros2_ws/build/audio_common_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mariem'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mariem/ros2_audio_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mariem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mariem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mariem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mariem/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mariem-VirtualBox:@/tmp/.ICE-unix/1345,unix/mariem-VirtualBox:/tmp/.ICE-unix/1345'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ce4d3472_4716_41f9_b187_7cfd9662b1af'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2H4WE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mariem/ros2_ws/build/audio_common_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mariem/ros2_audio_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble')]), 'shell': False}
+[0.100575] (-) TimerEvent: {}
+[0.202124] (-) TimerEvent: {}
+[0.303028] (-) TimerEvent: {}
+[0.362172] (audio_common_msgs) StdoutLine: {'line': b'[ 10%] Built target audio_common_msgs__rosidl_generator_c\n'}
+[0.403285] (-) TimerEvent: {}
+[0.454001] (audio_common_msgs) StdoutLine: {'line': b'[ 21%] Built target audio_common_msgs__rosidl_typesupport_introspection_c\n'}
+[0.504728] (-) TimerEvent: {}
+[0.598816] (audio_common_msgs) StdoutLine: {'line': b'[ 31%] Built target audio_common_msgs__rosidl_typesupport_c\n'}
+[0.604989] (-) TimerEvent: {}
+[0.640041] (audio_common_msgs) StdoutLine: {'line': b'[ 34%] Built target audio_common_msgs__cpp\n'}
+[0.703867] (audio_common_msgs) StdoutLine: {'line': b'[ 44%] Built target audio_common_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.705099] (-) TimerEvent: {}
+[0.752700] (audio_common_msgs) StdoutLine: {'line': b'[ 55%] Built target audio_common_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.793280] (audio_common_msgs) StdoutLine: {'line': b'[ 65%] Built target audio_common_msgs__rosidl_typesupport_cpp\n'}
+[0.805543] (-) TimerEvent: {}
+[0.831994] (audio_common_msgs) StdoutLine: {'line': b'[ 76%] Built target audio_common_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.873732] (audio_common_msgs) StdoutLine: {'line': b'[ 76%] Built target audio_common_msgs\n'}
+[0.906436] (-) TimerEvent: {}
+[0.923704] (audio_common_msgs) StdoutLine: {'line': b'[ 76%] Built target ament_cmake_python_copy_audio_common_msgs\n'}
+[1.010171] (-) TimerEvent: {}
+[1.112744] (-) TimerEvent: {}
+[1.135727] (audio_common_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.136538] (audio_common_msgs) StdoutLine: {'line': b'writing audio_common_msgs.egg-info/PKG-INFO\n'}
+[1.137406] (audio_common_msgs) StdoutLine: {'line': b'writing dependency_links to audio_common_msgs.egg-info/dependency_links.txt\n'}
+[1.138037] (audio_common_msgs) StdoutLine: {'line': b'writing top-level names to audio_common_msgs.egg-info/top_level.txt\n'}
+[1.154922] (audio_common_msgs) StdoutLine: {'line': b"reading manifest file 'audio_common_msgs.egg-info/SOURCES.txt'\n"}
+[1.157358] (audio_common_msgs) StdoutLine: {'line': b"writing manifest file 'audio_common_msgs.egg-info/SOURCES.txt'\n"}
+[1.203919] (audio_common_msgs) StdoutLine: {'line': b'[ 76%] Built target ament_cmake_python_build_audio_common_msgs_egg\n'}
+[1.213041] (-) TimerEvent: {}
+[1.313993] (audio_common_msgs) StdoutLine: {'line': b'[ 78%] Built target audio_common_msgs__py\n'}
+[1.314125] (-) TimerEvent: {}
+[1.414884] (-) TimerEvent: {}
+[1.433009] (audio_common_msgs) StdoutLine: {'line': b'[ 87%] Built target audio_common_msgs__rosidl_generator_py\n'}
+[1.517085] (-) TimerEvent: {}
+[1.536992] (audio_common_msgs) StdoutLine: {'line': b'[ 91%] Built target audio_common_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.620155] (-) TimerEvent: {}
+[1.645257] (audio_common_msgs) StdoutLine: {'line': b'[ 95%] Built target audio_common_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[1.721030] (-) TimerEvent: {}
+[1.755980] (audio_common_msgs) StdoutLine: {'line': b'[100%] Built target audio_common_msgs__rosidl_typesupport_c__pyext\n'}
+[1.800379] (audio_common_msgs) CommandEnded: {'returncode': 0}
+[1.810836] (audio_common_msgs) JobProgress: {'identifier': 'audio_common_msgs', 'progress': 'install'}
+[1.828227] (-) TimerEvent: {}
+[1.840769] (audio_common_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mariem/ros2_ws/build/audio_common_msgs'], 'cwd': '/home/mariem/ros2_ws/build/audio_common_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mariem'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mariem/ros2_audio_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mariem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mariem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mariem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mariem/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mariem-VirtualBox:@/tmp/.ICE-unix/1345,unix/mariem-VirtualBox:/tmp/.ICE-unix/1345'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ce4d3472_4716_41f9_b187_7cfd9662b1af'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2H4WE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mariem/ros2_ws/build/audio_common_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mariem/ros2_audio_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble')]), 'shell': False}
+[1.891813] (audio_common_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.897995] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/ament_index/resource_index/rosidl_interfaces/audio_common_msgs\n'}
+[1.904600] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs\n'}
+[1.905007] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg\n'}
+[1.906821] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail\n'}
+[1.907910] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__type_support.h\n'}
+[1.907986] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__struct.h\n'}
+[1.908022] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__struct.h\n'}
+[1.908057] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__functions.c\n'}
+[1.908085] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__struct.h\n'}
+[1.908114] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__type_support.h\n'}
+[1.908183] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__functions.h\n'}
+[1.908218] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__functions.h\n'}
+[1.908248] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__functions.c\n'}
+[1.908277] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__functions.h\n'}
+[1.908317] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__type_support.h\n'}
+[1.908344] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__functions.c\n'}
+[1.908371] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[1.908398] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/audio_data_stamped.h\n'}
+[1.908426] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/audio_info.h\n'}
+[1.908453] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/audio_data.h\n'}
+[1.910250] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/environment/library_path.sh\n'}
+[1.910317] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/environment/library_path.dsv\n'}
+[1.915061] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/lib/libaudio_common_msgs__rosidl_generator_c.so\n'}
+[1.915710] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs\n'}
+[1.916637] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg\n'}
+[1.916759] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail\n'}
+[1.916856] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[1.916963] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__rosidl_typesupport_fastrtps_c.h\n'}
+[1.917061] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__rosidl_typesupport_fastrtps_c.h\n'}
+[1.917297] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[1.919634] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/lib/libaudio_common_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[1.920195] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs\n'}
+[1.920669] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg\n'}
+[1.920736] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail\n'}
+[1.920857] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__type_support.c\n'}
+[1.920925] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__rosidl_typesupport_introspection_c.h\n'}
+[1.921700] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__type_support.c\n'}
+[1.921759] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__rosidl_typesupport_introspection_c.h\n'}
+[1.921858] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__rosidl_typesupport_introspection_c.h\n'}
+[1.921893] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__type_support.c\n'}
+[1.921937] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[1.931099] (-) TimerEvent: {}
+[1.931929] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/lib/libaudio_common_msgs__rosidl_typesupport_introspection_c.so\n'}
+[1.935563] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/lib/libaudio_common_msgs__rosidl_typesupport_c.so\n'}
+[1.936025] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs\n'}
+[1.936073] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg\n'}
+[1.936105] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail\n'}
+[1.936137] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__builder.hpp\n'}
+[1.936166] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__struct.hpp\n'}
+[1.936195] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__type_support.hpp\n'}
+[1.936222] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__traits.hpp\n'}
+[1.936248] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__type_support.hpp\n'}
+[1.936284] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__builder.hpp\n'}
+[1.936309] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__builder.hpp\n'}
+[1.936335] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__traits.hpp\n'}
+[1.936361] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__struct.hpp\n'}
+[1.936386] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__type_support.hpp\n'}
+[1.936412] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__traits.hpp\n'}
+[1.936438] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__struct.hpp\n'}
+[1.936465] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/audio_info.hpp\n'}
+[1.936491] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/audio_data.hpp\n'}
+[1.936517] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/audio_data_stamped.hpp\n'}
+[1.936541] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[1.936565] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs\n'}
+[1.936590] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg\n'}
+[1.936615] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail\n'}
+[1.936670] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.936711] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.936748] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[1.936783] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/dds_fastrtps\n'}
+[1.936816] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[1.943916] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/lib/libaudio_common_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[1.944289] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs\n'}
+[1.944389] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg\n'}
+[1.944426] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail\n'}
+[1.945236] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__type_support.cpp\n'}
+[1.945320] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__type_support.cpp\n'}
+[1.945357] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.945396] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.945425] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data_stamped__type_support.cpp\n'}
+[1.945454] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/include/audio_common_msgs/audio_common_msgs/msg/detail/audio_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[1.946846] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/lib/libaudio_common_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[1.949977] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/lib/libaudio_common_msgs__rosidl_typesupport_cpp.so\n'}
+[1.950089] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/environment/pythonpath.sh\n'}
+[1.950132] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/environment/pythonpath.dsv\n'}
+[1.952865] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs-0.3.12-py3.10.egg-info\n'}
+[1.954213] (audio_common_msgs) StdoutLine: {'line': b'-- Installing: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs-0.3.12-py3.10.egg-info/PKG-INFO\n'}
+[1.954419] (audio_common_msgs) StdoutLine: {'line': b'-- Installing: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs-0.3.12-py3.10.egg-info/dependency_links.txt\n'}
+[1.954555] (audio_common_msgs) StdoutLine: {'line': b'-- Installing: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs-0.3.12-py3.10.egg-info/top_level.txt\n'}
+[1.954668] (audio_common_msgs) StdoutLine: {'line': b'-- Installing: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs-0.3.12-py3.10.egg-info/SOURCES.txt\n'}
+[1.955905] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs\n'}
+[1.956756] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/__init__.py\n'}
+[1.956909] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/libaudio_common_msgs__rosidl_generator_py.so\n'}
+[1.956987] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.957038] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[1.957106] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[1.957174] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[1.957242] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/msg\n'}
+[1.968807] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/msg/__init__.py\n'}
+[1.968964] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/msg/_audio_data_stamped_s.c\n'}
+[1.969002] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/msg/_audio_info.py\n'}
+[1.969036] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/msg/_audio_info_s.c\n'}
+[1.969065] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/msg/_audio_data_s.c\n'}
+[1.969135] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/msg/_audio_data_stamped.py\n'}
+[1.969179] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/msg/_audio_data.py\n'}
+[1.969207] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/_audio_common_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[1.969237] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.033329] (-) TimerEvent: {}
+[2.080005] (audio_common_msgs) StdoutLine: {'line': b"Listing '/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs'...\n"}
+[2.080843] (audio_common_msgs) StdoutLine: {'line': b"Listing '/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/msg'...\n"}
+[2.086716] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.088842] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.089874] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages/audio_common_msgs/audio_common_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[2.095211] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/lib/libaudio_common_msgs__rosidl_generator_py.so\n'}
+[2.095626] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/msg/AudioData.idl\n'}
+[2.096168] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/msg/AudioDataStamped.idl\n'}
+[2.096331] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/msg/AudioInfo.idl\n'}
+[2.096703] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/msg/AudioData.msg\n'}
+[2.096884] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/msg/AudioDataStamped.msg\n'}
+[2.097938] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/msg/AudioInfo.msg\n'}
+[2.103010] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/ament_index/resource_index/package_run_dependencies/audio_common_msgs\n'}
+[2.103103] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/ament_index/resource_index/parent_prefix_path/audio_common_msgs\n'}
+[2.103141] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/environment/ament_prefix_path.sh\n'}
+[2.103175] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/environment/ament_prefix_path.dsv\n'}
+[2.103206] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/environment/path.sh\n'}
+[2.103445] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/environment/path.dsv\n'}
+[2.105025] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/local_setup.bash\n'}
+[2.105121] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/local_setup.sh\n'}
+[2.105159] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/local_setup.zsh\n'}
+[2.105192] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/local_setup.dsv\n'}
+[2.105220] (audio_common_msgs) StdoutLine: {'line': b'-- Installing: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.dsv\n'}
+[2.108256] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/ament_index/resource_index/packages/audio_common_msgs\n'}
+[2.111852] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/export_audio_common_msgs__rosidl_generator_cExport.cmake\n'}
+[2.112033] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/export_audio_common_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[2.113439] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/export_audio_common_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[2.113914] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/export_audio_common_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[2.116154] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[2.116318] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[2.119064] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgs__rosidl_typesupport_cExport.cmake\n'}
+[2.119446] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[2.122011] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/export_audio_common_msgs__rosidl_generator_cppExport.cmake\n'}
+[2.123777] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/export_audio_common_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[2.123933] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/export_audio_common_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[2.125728] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[2.125875] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[2.127317] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[2.127465] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[2.129893] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/export_audio_common_msgs__rosidl_generator_pyExport.cmake\n'}
+[2.130114] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/export_audio_common_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[2.130193] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[2.130432] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.130623] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.131137] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[2.131303] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[2.131418] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[2.131631] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[2.132823] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgsConfig.cmake\n'}
+[2.132888] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake/audio_common_msgsConfig-version.cmake\n'}
+[2.133133] (audio_common_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.xml\n'}
+[2.133920] (-) TimerEvent: {}
+[2.138788] (audio_common_msgs) CommandEnded: {'returncode': 0}
+[2.234723] (-) TimerEvent: {}
+[2.293927] (audio_common_msgs) JobEnded: {'identifier': 'audio_common_msgs', 'rc': 0}
+[2.300387] (audio_capture) JobStarted: {'identifier': 'audio_capture'}
+[2.336179] (-) TimerEvent: {}
+[2.357249] (audio_capture) JobProgress: {'identifier': 'audio_capture', 'progress': 'cmake'}
+[2.365070] (audio_capture) JobProgress: {'identifier': 'audio_capture', 'progress': 'build'}
+[2.371756] (audio_capture) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mariem/ros2_ws/build/audio_capture', '--', '-j1', '-l1'], 'cwd': '/home/mariem/ros2_ws/build/audio_capture', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mariem'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs/lib:/home/mariem/ros2_audio_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mariem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mariem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mariem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mariem/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mariem-VirtualBox:@/tmp/.ICE-unix/1345,unix/mariem-VirtualBox:/tmp/.ICE-unix/1345'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ce4d3472_4716_41f9_b187_7cfd9662b1af'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2H4WE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mariem/ros2_ws/build/audio_capture'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/home/mariem/ros2_audio_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble')]), 'shell': False}
+[2.447656] (-) TimerEvent: {}
+[2.548011] (-) TimerEvent: {}
+[2.650192] (-) TimerEvent: {}
+[2.751698] (-) TimerEvent: {}
+[2.854106] (-) TimerEvent: {}
+[2.963214] (-) TimerEvent: {}
+[3.009939] (audio_capture) StdoutLine: {'line': b'[ 50%] Built target audio_capture\n'}
+[3.063723] (-) TimerEvent: {}
+[3.132785] (audio_capture) StdoutLine: {'line': b'[100%] Built target audio_capture_node\n'}
+[3.165806] (audio_capture) CommandEnded: {'returncode': 0}
+[3.166143] (-) TimerEvent: {}
+[3.177763] (audio_capture) JobProgress: {'identifier': 'audio_capture', 'progress': 'install'}
+[3.177803] (audio_capture) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mariem/ros2_ws/build/audio_capture'], 'cwd': '/home/mariem/ros2_ws/build/audio_capture', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mariem'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs/lib:/home/mariem/ros2_audio_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mariem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mariem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mariem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mariem/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mariem-VirtualBox:@/tmp/.ICE-unix/1345,unix/mariem-VirtualBox:/tmp/.ICE-unix/1345'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ce4d3472_4716_41f9_b187_7cfd9662b1af'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2H4WE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mariem/ros2_ws/build/audio_capture'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/home/mariem/ros2_audio_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble')]), 'shell': False}
+[3.211523] (audio_capture) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.224230] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/lib/audio_capture/audio_capture_node\n'}
+[3.228112] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/bin/audio_capture_node\n'}
+[3.231194] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/lib/libaudio_capture.so\n'}
+[3.233137] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch\n'}
+[3.234856] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture_to_file.launch.xml\n'}
+[3.235841] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture_to_file.launch.py\n'}
+[3.235913] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture_wave.launch.xml\n'}
+[3.235946] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture.launch.xml\n'}
+[3.235975] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture.launch.py\n'}
+[3.236002] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture_wave.launch.py\n'}
+[3.236805] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/library_path.sh\n'}
+[3.236873] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/library_path.dsv\n'}
+[3.239959] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/ament_index/resource_index/package_run_dependencies/audio_capture\n'}
+[3.240827] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/ament_index/resource_index/parent_prefix_path/audio_capture\n'}
+[3.241986] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/ament_prefix_path.sh\n'}
+[3.242057] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/ament_prefix_path.dsv\n'}
+[3.242091] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/path.sh\n'}
+[3.244330] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/path.dsv\n'}
+[3.244388] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/local_setup.bash\n'}
+[3.249305] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/local_setup.sh\n'}
+[3.249429] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/local_setup.zsh\n'}
+[3.249491] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/local_setup.dsv\n'}
+[3.249535] (audio_capture) StdoutLine: {'line': b'-- Installing: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.dsv\n'}
+[3.249586] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/ament_index/resource_index/packages/audio_capture\n'}
+[3.249623] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/ament_index/resource_index/rclcpp_components/audio_capture\n'}
+[3.249666] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.249710] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/cmake/audio_captureConfig.cmake\n'}
+[3.257733] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/cmake/audio_captureConfig-version.cmake\n'}
+[3.258001] (audio_capture) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.xml\n'}
+[3.258044] (audio_capture) CommandEnded: {'returncode': 0}
+[3.270564] (-) TimerEvent: {}
+[3.376679] (-) TimerEvent: {}
+[3.400496] (audio_capture) JobEnded: {'identifier': 'audio_capture', 'rc': 0}
+[3.422897] (audio_play) JobStarted: {'identifier': 'audio_play'}
+[3.456039] (audio_play) JobProgress: {'identifier': 'audio_play', 'progress': 'cmake'}
+[3.466730] (audio_play) JobProgress: {'identifier': 'audio_play', 'progress': 'build'}
+[3.468965] (audio_play) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mariem/ros2_ws/build/audio_play', '--', '-j1', '-l1'], 'cwd': '/home/mariem/ros2_ws/build/audio_play', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mariem'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs/lib:/home/mariem/ros2_audio_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mariem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mariem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mariem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mariem/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mariem-VirtualBox:@/tmp/.ICE-unix/1345,unix/mariem-VirtualBox:/tmp/.ICE-unix/1345'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ce4d3472_4716_41f9_b187_7cfd9662b1af'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2H4WE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mariem/ros2_ws/build/audio_play'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/home/mariem/ros2_audio_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble')]), 'shell': False}
+[3.476924] (-) TimerEvent: {}
+[3.579724] (-) TimerEvent: {}
+[3.680256] (-) TimerEvent: {}
+[3.782740] (-) TimerEvent: {}
+[3.834192] (audio_play) StdoutLine: {'line': b'[ 50%] Built target audio_play\n'}
+[3.888063] (-) TimerEvent: {}
+[3.965774] (audio_play) StdoutLine: {'line': b'[100%] Built target audio_play_node\n'}
+[3.990868] (-) TimerEvent: {}
+[4.001363] (audio_play) CommandEnded: {'returncode': 0}
+[4.019066] (audio_play) JobProgress: {'identifier': 'audio_play', 'progress': 'install'}
+[4.019262] (audio_play) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mariem/ros2_ws/build/audio_play'], 'cwd': '/home/mariem/ros2_ws/build/audio_play', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mariem'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs/lib:/home/mariem/ros2_audio_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mariem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mariem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mariem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mariem/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mariem-VirtualBox:@/tmp/.ICE-unix/1345,unix/mariem-VirtualBox:/tmp/.ICE-unix/1345'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ce4d3472_4716_41f9_b187_7cfd9662b1af'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2H4WE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mariem/ros2_ws/build/audio_play'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/home/mariem/ros2_audio_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble')]), 'shell': False}
+[4.054839] (audio_play) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.073135] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/lib/audio_play/audio_play_node\n'}
+[4.077107] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/bin/audio_play_node\n'}
+[4.089774] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/lib/libaudio_play.so\n'}
+[4.091040] (-) TimerEvent: {}
+[4.091889] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/launch\n'}
+[4.094299] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/launch/play.launch.py\n'}
+[4.095099] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/launch/play.launch.xml\n'}
+[4.095378] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/environment/library_path.sh\n'}
+[4.101142] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/environment/library_path.dsv\n'}
+[4.101238] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/ament_index/resource_index/package_run_dependencies/audio_play\n'}
+[4.101352] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/ament_index/resource_index/parent_prefix_path/audio_play\n'}
+[4.101398] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/environment/ament_prefix_path.sh\n'}
+[4.101434] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/environment/ament_prefix_path.dsv\n'}
+[4.109014] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/environment/path.sh\n'}
+[4.112221] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/environment/path.dsv\n'}
+[4.113883] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/local_setup.bash\n'}
+[4.113943] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/local_setup.sh\n'}
+[4.113976] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/local_setup.zsh\n'}
+[4.114004] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/local_setup.dsv\n'}
+[4.114031] (audio_play) StdoutLine: {'line': b'-- Installing: /home/mariem/ros2_ws/install/audio_play/share/audio_play/package.dsv\n'}
+[4.114746] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/ament_index/resource_index/packages/audio_play\n'}
+[4.120176] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/ament_index/resource_index/rclcpp_components/audio_play\n'}
+[4.121281] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.122701] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/cmake/audio_playConfig.cmake\n'}
+[4.142280] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/cmake/audio_playConfig-version.cmake\n'}
+[4.142773] (audio_play) StdoutLine: {'line': b'-- Up-to-date: /home/mariem/ros2_ws/install/audio_play/share/audio_play/package.xml\n'}
+[4.142825] (audio_play) CommandEnded: {'returncode': 0}
+[4.195692] (-) TimerEvent: {}
+[4.306598] (-) TimerEvent: {}
+[4.321042] (audio_play) JobEnded: {'identifier': 'audio_play', 'rc': 0}
+[4.351255] (sound_play) JobStarted: {'identifier': 'sound_play'}
+[4.375362] (sound_play) JobProgress: {'identifier': 'sound_play', 'progress': 'cmake'}
+[4.375712] (sound_play) Command: {'cmd': ['/usr/bin/cmake', '/home/mariem/ros2_ws/src/audio_common/sound_play', '-DCMAKE_INSTALL_PREFIX=/home/mariem/ros2_ws/install/sound_play'], 'cwd': '/home/mariem/ros2_ws/build/sound_play', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mariem'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs/lib:/home/mariem/ros2_audio_ws/install/audio_common_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mariem'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1345'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/mariem/ros2_audio_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mariem'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'mariem'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/mariem/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mariem-VirtualBox:@/tmp/.ICE-unix/1345,unix/mariem-VirtualBox:/tmp/.ICE-unix/1345'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ce4d3472_4716_41f9_b187_7cfd9662b1af'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'it_IT.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2H4WE3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mariem/ros2_ws/build/sound_play'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=583e27f27f81e1736cd06e7b68f8a5d2'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/home/mariem/ros2_audio_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble')]), 'shell': False}
+[4.422650] (-) TimerEvent: {}
+[4.522952] (-) TimerEvent: {}
+[4.626686] (-) TimerEvent: {}
+[4.730239] (-) TimerEvent: {}
+[4.834389] (-) TimerEvent: {}
+[4.935657] (-) TimerEvent: {}
+[5.038661] (-) TimerEvent: {}
+[5.081032] (sound_play) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.142728] (-) TimerEvent: {}
+[5.244243] (-) TimerEvent: {}
+[5.344740] (-) TimerEvent: {}
+[5.452907] (-) TimerEvent: {}
+[5.554843] (-) TimerEvent: {}
+[5.686708] (-) TimerEvent: {}
+[5.723026] (sound_play) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.795726] (sound_play) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.795985] (-) TimerEvent: {}
+[5.905767] (-) TimerEvent: {}
+[6.012039] (-) TimerEvent: {}
+[6.123674] (-) TimerEvent: {}
+[6.160121] (sound_play) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.160283] (sound_play) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.169443] (sound_play) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.169583] (sound_play) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.192814] (sound_play) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.224234] (-) TimerEvent: {}
+[6.331799] (-) TimerEvent: {}
+[6.446047] (-) TimerEvent: {}
+[6.523734] (sound_play) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.555980] (-) TimerEvent: {}
+[6.565209] (sound_play) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.565449] (sound_play) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.565540] (sound_play) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.589278] (sound_play) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.662714] (-) TimerEvent: {}
+[6.764815] (-) TimerEvent: {}
+[6.865664] (-) TimerEvent: {}
+[6.996905] (-) TimerEvent: {}
+[7.103202] (-) TimerEvent: {}
+[7.403120] (-) TimerEvent: {}
+[7.505050] (-) TimerEvent: {}
+[7.609088] (-) TimerEvent: {}
+[7.718617] (-) TimerEvent: {}
+[7.823420] (-) TimerEvent: {}
+[7.922070] (sound_play) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[7.925699] (-) TimerEvent: {}
+[8.026532] (-) TimerEvent: {}
+[8.128910] (-) TimerEvent: {}
+[8.238827] (-) TimerEvent: {}
+[8.340460] (-) TimerEvent: {}
+[8.387375] (sound_play) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[8.404288] (sound_play) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.426634] (sound_play) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[8.442228] (-) TimerEvent: {}
+[8.542700] (-) TimerEvent: {}
+[8.644893] (-) TimerEvent: {}
+[8.647397] (sound_play) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.753334] (-) TimerEvent: {}
+[8.791902] (sound_play) StdoutLine: {'line': b'-- Found audio_common_msgs: 0.3.12 (/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/cmake)\n'}
+[8.853814] (-) TimerEvent: {}
+[8.957685] (-) TimerEvent: {}
+[9.034354] (sound_play) StdoutLine: {'line': b'-- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)\n'}
+[9.061196] (-) TimerEvent: {}
+[9.169073] (-) TimerEvent: {}
+[9.281143] (-) TimerEvent: {}
+[9.384160] (-) TimerEvent: {}
+[9.498899] (-) TimerEvent: {}
+[9.599896] (-) TimerEvent: {}
+[9.709686] (-) TimerEvent: {}
+[9.813188] (-) TimerEvent: {}
+[9.948725] (-) TimerEvent: {}
+[10.081837] (-) TimerEvent: {}
+[10.182733] (-) TimerEvent: {}
+[10.202327] (sound_play) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[10.303698] (-) TimerEvent: {}
+[10.408522] (-) TimerEvent: {}
+[10.511811] (-) TimerEvent: {}
+[10.614644] (-) TimerEvent: {}
+[10.723914] (-) TimerEvent: {}
+[10.831487] (-) TimerEvent: {}
+[10.905097] (sound_play) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[10.937689] (-) TimerEvent: {}
+[11.038259] (-) TimerEvent: {}
+[11.154943] (-) TimerEvent: {}
+[11.263164] (-) TimerEvent: {}
+[11.365764] (-) TimerEvent: {}
+[11.469717] (-) TimerEvent: {}
+[11.586078] (-) TimerEvent: {}
+[11.689013] (-) TimerEvent: {}
+[11.792972] (-) TimerEvent: {}
+[11.798683] (sound_play) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[11.883871] (sound_play) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[11.893703] (-) TimerEvent: {}
+[11.901167] (sound_play) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[11.980768] (sound_play) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[11.981801] (sound_play) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[11.986086] (sound_play) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[11.986192] (sound_play) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[11.995973] (-) TimerEvent: {}
+[12.085913] (sound_play) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[12.096912] (-) TimerEvent: {}
+[12.197704] (-) TimerEvent: {}
+[12.206802] (sound_play) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:122 (add_custom_target):\n'}
+[12.210244] (sound_play) StderrLine: {'line': b'  add_custom_target cannot create target "ament_cmake_python_copy_sound_play"\n'}
+[12.210371] (sound_play) StderrLine: {'line': b'  because another target with the same name already exists.  The existing\n'}
+[12.210404] (sound_play) StderrLine: {'line': b'  target is a custom target created in source directory\n'}
+[12.210432] (sound_play) StderrLine: {'line': b'  "/home/mariem/ros2_ws/src/audio_common/sound_play".  See documentation for\n'}
+[12.210460] (sound_play) StderrLine: {'line': b'  policy CMP0002 for more details.\n'}
+[12.210487] (sound_play) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[12.210512] (sound_play) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)\n'}
+[12.210538] (sound_play) StderrLine: {'line': b'  CMakeLists.txt:36 (ament_python_install_package)\n'}
+[12.210563] (sound_play) StderrLine: {'line': b'\n'}
+[12.210589] (sound_play) StderrLine: {'line': b'\x1b[0m\n'}
+[12.210614] (sound_play) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:141 (add_custom_target):\n'}
+[12.210647] (sound_play) StderrLine: {'line': b'  add_custom_target cannot create target\n'}
+[12.210672] (sound_play) StderrLine: {'line': b'  "ament_cmake_python_build_sound_play_egg" because another target with the\n'}
+[12.210697] (sound_play) StderrLine: {'line': b'  same name already exists.  The existing target is a custom target created\n'}
+[12.210721] (sound_play) StderrLine: {'line': b'  in source directory "/home/mariem/ros2_ws/src/audio_common/sound_play".\n'}
+[12.210748] (sound_play) StderrLine: {'line': b'  See documentation for policy CMP0002 for more details.\n'}
+[12.210772] (sound_play) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[12.210796] (sound_play) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_python/cmake/ament_python_install_package.cmake:39 (_ament_cmake_python_install_package)\n'}
+[12.210820] (sound_play) StderrLine: {'line': b'  CMakeLists.txt:36 (ament_python_install_package)\n'}
+[12.210844] (sound_play) StderrLine: {'line': b'\n'}
+[12.210867] (sound_play) StderrLine: {'line': b'\x1b[0m\n'}
+[12.336043] (sound_play) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[12.336168] (-) TimerEvent: {}
+[12.347982] (sound_play) StdoutLine: {'line': b'See also "/home/mariem/ros2_ws/build/sound_play/CMakeFiles/CMakeOutput.log".\n'}
+[12.348085] (sound_play) CommandEnded: {'returncode': 1}
+[12.437471] (-) TimerEvent: {}
+[12.480932] (sound_play) JobEnded: {'identifier': 'sound_play', 'rc': 1}
+[12.481509] (audio_streamer) JobSkipped: {'identifier': 'audio_streamer'}
+[12.481531] (audio_common) JobSkipped: {'identifier': 'audio_common'}
+[12.481540] (-) EventReactorShutdown: {}

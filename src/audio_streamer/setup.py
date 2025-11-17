@@ -13,7 +13,7 @@ setup(
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy]*'))),(os.path.join('share', package_name, 'config'), glob('config/params.yaml'))
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'numpy', 'scipy', 'sounddevice'],
     zip_safe=True,
     maintainer='mariem',
     maintainer_email='mariem@todo.todo',

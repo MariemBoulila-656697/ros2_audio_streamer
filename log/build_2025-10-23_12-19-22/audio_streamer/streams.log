@@ -1,0 +1,30 @@
+[0.670s] Invoking command in '/home/mariem/ros2_ws/src/audio_streamer': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/build/audio_streamer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages:/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/audio_streamer build --build-base /home/mariem/ros2_ws/build/audio_streamer/build install --record /home/mariem/ros2_ws/build/audio_streamer/install.log --single-version-externally-managed install_data
+[0.907s] running egg_info
+[0.909s] writing ../../build/audio_streamer/audio_streamer.egg-info/PKG-INFO
+[0.913s] writing dependency_links to ../../build/audio_streamer/audio_streamer.egg-info/dependency_links.txt
+[0.913s] writing entry points to ../../build/audio_streamer/audio_streamer.egg-info/entry_points.txt
+[0.916s] writing requirements to ../../build/audio_streamer/audio_streamer.egg-info/requires.txt
+[0.916s] writing top-level names to ../../build/audio_streamer/audio_streamer.egg-info/top_level.txt
+[0.923s] reading manifest file '../../build/audio_streamer/audio_streamer.egg-info/SOURCES.txt'
+[0.933s] writing manifest file '../../build/audio_streamer/audio_streamer.egg-info/SOURCES.txt'
+[0.933s] running build
+[0.934s] running build_py
+[0.938s] copying audio_streamer/audio_subscriber.py -> /home/mariem/ros2_ws/build/audio_streamer/build/lib/audio_streamer
+[0.942s] copying audio_streamer/audio_publisher.py -> /home/mariem/ros2_ws/build/audio_streamer/build/lib/audio_streamer
+[0.942s] running install
+[0.942s] running install_lib
+[0.944s] copying /home/mariem/ros2_ws/build/audio_streamer/build/lib/audio_streamer/audio_subscriber.py -> /home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages/audio_streamer
+[0.944s] copying /home/mariem/ros2_ws/build/audio_streamer/build/lib/audio_streamer/audio_publisher.py -> /home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages/audio_streamer
+[0.946s] byte-compiling /home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages/audio_streamer/audio_subscriber.py to audio_subscriber.cpython-310.pyc
+[0.947s] byte-compiling /home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages/audio_streamer/audio_publisher.py to audio_publisher.cpython-310.pyc
+[0.948s] running install_data
+[0.950s] copying launch/streaming_launch.py -> /home/mariem/ros2_ws/install/audio_streamer/share/audio_streamer/launch
+[0.951s] copying config/params.yaml -> /home/mariem/ros2_ws/install/audio_streamer/share/audio_streamer/config
+[0.952s] running install_egg_info
+[0.954s] removing '/home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages/audio_streamer-0.0.0-py3.10.egg-info' (and everything under it)
+[0.954s] Copying ../../build/audio_streamer/audio_streamer.egg-info to /home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages/audio_streamer-0.0.0-py3.10.egg-info
+[0.956s] running install_scripts
+[0.981s] Installing audio_pub script to /home/mariem/ros2_ws/install/audio_streamer/lib/audio_streamer
+[0.981s] Installing audio_sub script to /home/mariem/ros2_ws/install/audio_streamer/lib/audio_streamer
+[0.982s] writing list of installed files to '/home/mariem/ros2_ws/build/audio_streamer/install.log'
+[1.003s] Invoked command in '/home/mariem/ros2_ws/src/audio_streamer' returned '0': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/build/audio_streamer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages:/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/audio_streamer build --build-base /home/mariem/ros2_ws/build/audio_streamer/build install --record /home/mariem/ros2_ws/build/audio_streamer/install.log --single-version-externally-managed install_data

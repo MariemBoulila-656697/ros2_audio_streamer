@@ -1,0 +1,7 @@
+{
+  "package_name": "sound_play",
+  "non_idl_tuples": [
+    "/home/mariem/ros2_ws/src/audio_common/sound_play:msg/SoundRequest.msg",
+    "/home/mariem/ros2_ws/src/audio_common/sound_play:action/SoundRequest.action"
+  ]
+}

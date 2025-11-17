@@ -1,0 +1,4 @@
+Invoking command in '/home/mariem/ros2_ws/build/audio_common_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_common_msgs -- -j1 -l1
+Invoked command in '/home/mariem/ros2_ws/build/audio_common_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_common_msgs -- -j1 -l1
+Invoking command in '/home/mariem/ros2_ws/build/audio_common_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_common_msgs
+Invoked command in '/home/mariem/ros2_ws/build/audio_common_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_common_msgs

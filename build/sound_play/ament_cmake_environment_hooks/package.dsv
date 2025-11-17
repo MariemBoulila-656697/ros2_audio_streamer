@@ -1,0 +1,4 @@
+source;share/sound_play/local_setup.bash
+source;share/sound_play/local_setup.dsv
+source;share/sound_play/local_setup.sh
+source;share/sound_play/local_setup.zsh

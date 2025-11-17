@@ -1,4 +1,7 @@
+numpy
+scipy
 setuptools
+sounddevice
 
 [test]
 pytest

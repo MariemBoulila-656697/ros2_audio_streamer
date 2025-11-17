@@ -1,0 +1,418 @@
+[0.547s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.547s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=1, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7befdceabe20>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7befdceab9d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7befdceab9d0>>)
+[1.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.227s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/mariem/ros2_ws'
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.246s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extensions ['ignore', 'ignore_ament_install']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extension 'ignore'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extension 'ignore_ament_install'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extensions ['colcon_pkg']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extension 'colcon_pkg'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extensions ['colcon_meta']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extension 'colcon_meta'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extensions ['ros']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extension 'ros'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extensions ['cmake', 'python']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extension 'cmake'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extension 'python'
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extensions ['python_setup_py']
+[1.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common) by extension 'python_setup_py'
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_capture) by extensions ['ignore', 'ignore_ament_install']
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_capture) by extension 'ignore'
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_capture) by extension 'ignore_ament_install'
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_capture) by extensions ['colcon_pkg']
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_capture) by extension 'colcon_pkg'
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_capture) by extensions ['colcon_meta']
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_capture) by extension 'colcon_meta'
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_capture) by extensions ['ros']
+[1.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_capture) by extension 'ros'
+[1.253s] DEBUG:colcon.colcon_core.package_identification:Package 'src/audio_common/audio_capture' with type 'ros.ament_cmake' and name 'audio_capture'
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common) by extensions ['ignore', 'ignore_ament_install']
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common) by extension 'ignore'
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common) by extension 'ignore_ament_install'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common) by extensions ['colcon_pkg']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common) by extension 'colcon_pkg'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common) by extensions ['colcon_meta']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common) by extension 'colcon_meta'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common) by extensions ['ros']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common) by extension 'ros'
+[1.256s] DEBUG:colcon.colcon_core.package_identification:Package 'src/audio_common/audio_common' with type 'ros.ament_cmake' and name 'audio_common'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common_msgs) by extensions ['ignore', 'ignore_ament_install']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common_msgs) by extension 'ignore'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common_msgs) by extension 'ignore_ament_install'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common_msgs) by extensions ['colcon_pkg']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common_msgs) by extension 'colcon_pkg'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common_msgs) by extensions ['colcon_meta']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common_msgs) by extension 'colcon_meta'
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common_msgs) by extensions ['ros']
+[1.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_common_msgs) by extension 'ros'
+[1.258s] DEBUG:colcon.colcon_core.package_identification:Package 'src/audio_common/audio_common_msgs' with type 'ros.ament_cmake' and name 'audio_common_msgs'
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_play) by extensions ['ignore', 'ignore_ament_install']
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_play) by extension 'ignore'
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_play) by extension 'ignore_ament_install'
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_play) by extensions ['colcon_pkg']
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_play) by extension 'colcon_pkg'
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_play) by extensions ['colcon_meta']
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_play) by extension 'colcon_meta'
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_play) by extensions ['ros']
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/audio_play) by extension 'ros'
+[1.260s] DEBUG:colcon.colcon_core.package_identification:Package 'src/audio_common/audio_play' with type 'ros.ament_cmake' and name 'audio_play'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/sound_play) by extensions ['ignore', 'ignore_ament_install']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/sound_play) by extension 'ignore'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/sound_play) by extension 'ignore_ament_install'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/sound_play) by extensions ['colcon_pkg']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/sound_play) by extension 'colcon_pkg'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/sound_play) by extensions ['colcon_meta']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/sound_play) by extension 'colcon_meta'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/sound_play) by extensions ['ros']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_common/sound_play) by extension 'ros'
+[1.262s] DEBUG:colcon.colcon_core.package_identification:Package 'src/audio_common/sound_play' with type 'ros.ament_cmake' and name 'sound_play'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_streamer) by extensions ['ignore', 'ignore_ament_install']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_streamer) by extension 'ignore'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_streamer) by extension 'ignore_ament_install'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_streamer) by extensions ['colcon_pkg']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_streamer) by extension 'colcon_pkg'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_streamer) by extensions ['colcon_meta']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_streamer) by extension 'colcon_meta'
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_streamer) by extensions ['ros']
+[1.263s] Level 1:colcon.colcon_core.package_identification:_identify(src/audio_streamer) by extension 'ros'
+[1.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/audio_streamer' with type 'ros.ament_python' and name 'audio_streamer'
+[1.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.265s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.310s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.317s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/mariem/ros2_audio_ws/install
+[1.317s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 272 installed packages in /opt/ros/humble
+[1.325s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_common_msgs' build argument 'cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_common_msgs' build argument 'cmake_target' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_common_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_common_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_common_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_common_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_common_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_common_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_common_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.357s] DEBUG:colcon.colcon_core.verb:Building package 'audio_common_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mariem/ros2_ws/build/audio_common_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mariem/ros2_ws/install/audio_common_msgs', 'merge_install': False, 'path': '/home/mariem/ros2_ws/src/audio_common/audio_common_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_capture' build argument 'cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_capture' build argument 'cmake_target' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_capture' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_capture' build argument 'cmake_clean_cache' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_capture' build argument 'cmake_clean_first' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_capture' build argument 'cmake_force_configure' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_capture' build argument 'ament_cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_capture' build argument 'catkin_cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_capture' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.357s] DEBUG:colcon.colcon_core.verb:Building package 'audio_capture' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mariem/ros2_ws/build/audio_capture', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mariem/ros2_ws/install/audio_capture', 'merge_install': False, 'path': '/home/mariem/ros2_ws/src/audio_common/audio_capture', 'symlink_install': False, 'test_result_base': None}
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_play' build argument 'cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_play' build argument 'cmake_target' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_play' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_play' build argument 'cmake_clean_cache' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_play' build argument 'cmake_clean_first' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_play' build argument 'cmake_force_configure' from command line to 'False'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_play' build argument 'ament_cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_play' build argument 'catkin_cmake_args' from command line to 'None'
+[1.357s] Level 5:colcon.colcon_core.verb:set package 'audio_play' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.357s] DEBUG:colcon.colcon_core.verb:Building package 'audio_play' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mariem/ros2_ws/build/audio_play', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mariem/ros2_ws/install/audio_play', 'merge_install': False, 'path': '/home/mariem/ros2_ws/src/audio_common/audio_play', 'symlink_install': False, 'test_result_base': None}
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_streamer' build argument 'cmake_args' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_streamer' build argument 'cmake_target' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_streamer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_streamer' build argument 'cmake_clean_cache' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_streamer' build argument 'cmake_clean_first' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_streamer' build argument 'cmake_force_configure' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_streamer' build argument 'ament_cmake_args' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_streamer' build argument 'catkin_cmake_args' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_streamer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.358s] DEBUG:colcon.colcon_core.verb:Building package 'audio_streamer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mariem/ros2_ws/build/audio_streamer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mariem/ros2_ws/install/audio_streamer', 'merge_install': False, 'path': '/home/mariem/ros2_ws/src/audio_streamer', 'symlink_install': False, 'test_result_base': None}
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_args' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_target' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_clean_cache' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_clean_first' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'cmake_force_configure' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'ament_cmake_args' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'catkin_cmake_args' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'sound_play' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.358s] DEBUG:colcon.colcon_core.verb:Building package 'sound_play' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mariem/ros2_ws/build/sound_play', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mariem/ros2_ws/install/sound_play', 'merge_install': False, 'path': '/home/mariem/ros2_ws/src/audio_common/sound_play', 'symlink_install': False, 'test_result_base': None}
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_common' build argument 'cmake_args' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_common' build argument 'cmake_target' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_common' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_common' build argument 'cmake_clean_cache' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_common' build argument 'cmake_clean_first' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_common' build argument 'cmake_force_configure' from command line to 'False'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_common' build argument 'ament_cmake_args' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_common' build argument 'catkin_cmake_args' from command line to 'None'
+[1.358s] Level 5:colcon.colcon_core.verb:set package 'audio_common' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.358s] DEBUG:colcon.colcon_core.verb:Building package 'audio_common' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/mariem/ros2_ws/build/audio_common', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/mariem/ros2_ws/install/audio_common', 'merge_install': False, 'path': '/home/mariem/ros2_ws/src/audio_common/audio_common', 'symlink_install': False, 'test_result_base': None}
+[1.358s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.359s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.359s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mariem/ros2_ws/src/audio_common/audio_common_msgs' with build type 'ament_cmake'
+[1.359s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mariem/ros2_ws/src/audio_common/audio_common_msgs'
+[1.375s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.375s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.376s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.400s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mariem/ros2_ws/build/audio_common_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_common_msgs -- -j1 -l1
+[3.165s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mariem/ros2_ws/build/audio_common_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_common_msgs -- -j1 -l1
+[3.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mariem/ros2_ws/build/audio_common_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_common_msgs
+[3.497s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_common_msgs)
+[3.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mariem/ros2_ws/build/audio_common_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_common_msgs
+[3.513s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs' for CMake module files
+[3.514s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs' for CMake config files
+[3.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_common_msgs', 'cmake_prefix_path')
+[3.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/cmake_prefix_path.ps1'
+[3.526s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/cmake_prefix_path.dsv'
+[3.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/cmake_prefix_path.sh'
+[3.538s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/lib'
+[3.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_common_msgs', 'ld_library_path_lib')
+[3.539s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/ld_library_path_lib.ps1'
+[3.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/ld_library_path_lib.dsv'
+[3.547s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/ld_library_path_lib.sh'
+[3.556s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/bin'
+[3.556s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/lib/pkgconfig/audio_common_msgs.pc'
+[3.556s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/lib/python3.10/site-packages'
+[3.556s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/bin'
+[3.556s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.ps1'
+[3.565s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.dsv'
+[3.568s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.sh'
+[3.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.bash'
+[3.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.zsh'
+[3.589s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mariem/ros2_ws/install/audio_common_msgs/share/colcon-core/packages/audio_common_msgs)
+[3.594s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_common_msgs)
+[3.594s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs' for CMake module files
+[3.595s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs' for CMake config files
+[3.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_common_msgs', 'cmake_prefix_path')
+[3.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/cmake_prefix_path.ps1'
+[3.602s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/cmake_prefix_path.dsv'
+[3.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/cmake_prefix_path.sh'
+[3.607s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/lib'
+[3.607s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_common_msgs', 'ld_library_path_lib')
+[3.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/ld_library_path_lib.ps1'
+[3.610s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/ld_library_path_lib.dsv'
+[3.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/hook/ld_library_path_lib.sh'
+[3.618s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/bin'
+[3.618s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/lib/pkgconfig/audio_common_msgs.pc'
+[3.619s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/lib/python3.10/site-packages'
+[3.619s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_common_msgs/bin'
+[3.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.ps1'
+[3.628s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.dsv'
+[3.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.sh'
+[3.646s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.bash'
+[3.647s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_common_msgs/share/audio_common_msgs/package.zsh'
+[3.652s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mariem/ros2_ws/install/audio_common_msgs/share/colcon-core/packages/audio_common_msgs)
+[3.656s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mariem/ros2_ws/src/audio_common/audio_capture' with build type 'ament_cmake'
+[3.656s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mariem/ros2_ws/src/audio_common/audio_capture'
+[3.659s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.660s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mariem/ros2_ws/build/audio_capture': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_capture -- -j1 -l1
+[4.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mariem/ros2_ws/build/audio_capture' returned '0': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_capture -- -j1 -l1
+[4.537s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mariem/ros2_ws/build/audio_capture': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_capture
+[4.613s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_capture)
+[4.613s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture' for CMake module files
+[4.614s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture' for CMake config files
+[4.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mariem/ros2_ws/build/audio_capture' returned '0': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_capture
+[4.618s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_capture', 'cmake_prefix_path')
+[4.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/cmake_prefix_path.ps1'
+[4.624s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/cmake_prefix_path.dsv'
+[4.625s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/cmake_prefix_path.sh'
+[4.630s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/lib'
+[4.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_capture', 'ld_library_path_lib')
+[4.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/ld_library_path_lib.ps1'
+[4.633s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/ld_library_path_lib.dsv'
+[4.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/ld_library_path_lib.sh'
+[4.636s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/bin'
+[4.639s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_capture', 'path')
+[4.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/path.ps1'
+[4.642s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/path.dsv'
+[4.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/path.sh'
+[4.649s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/lib/pkgconfig/audio_capture.pc'
+[4.651s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/lib/python3.10/site-packages'
+[4.651s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/bin'
+[4.651s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_capture', 'pythonscriptspath')
+[4.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/pythonscriptspath.ps1'
+[4.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/pythonscriptspath.dsv'
+[4.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/pythonscriptspath.sh'
+[4.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.ps1'
+[4.674s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.dsv'
+[4.677s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.sh'
+[4.681s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.bash'
+[4.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.zsh'
+[4.688s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mariem/ros2_ws/install/audio_capture/share/colcon-core/packages/audio_capture)
+[4.689s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_capture)
+[4.689s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture' for CMake module files
+[4.690s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture' for CMake config files
+[4.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_capture', 'cmake_prefix_path')
+[4.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/cmake_prefix_path.ps1'
+[4.694s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/cmake_prefix_path.dsv'
+[4.697s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/cmake_prefix_path.sh'
+[4.701s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/lib'
+[4.701s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_capture', 'ld_library_path_lib')
+[4.701s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/ld_library_path_lib.ps1'
+[4.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/ld_library_path_lib.dsv'
+[4.709s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/ld_library_path_lib.sh'
+[4.715s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/bin'
+[4.715s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_capture', 'path')
+[4.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/path.ps1'
+[4.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/path.dsv'
+[4.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/path.sh'
+[4.728s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/lib/pkgconfig/audio_capture.pc'
+[4.728s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/lib/python3.10/site-packages'
+[4.728s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_capture/bin'
+[4.728s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_capture', 'pythonscriptspath')
+[4.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/pythonscriptspath.ps1'
+[4.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/pythonscriptspath.dsv'
+[4.739s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/hook/pythonscriptspath.sh'
+[4.742s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.ps1'
+[4.745s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.dsv'
+[4.748s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.sh'
+[4.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.bash'
+[4.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.zsh'
+[4.758s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mariem/ros2_ws/install/audio_capture/share/colcon-core/packages/audio_capture)
+[4.762s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mariem/ros2_ws/src/audio_common/audio_play' with build type 'ament_cmake'
+[4.763s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mariem/ros2_ws/src/audio_common/audio_play'
+[4.763s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.763s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.828s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mariem/ros2_ws/build/audio_play': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_play -- -j1 -l1
+[5.360s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mariem/ros2_ws/build/audio_play' returned '0': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_play -- -j1 -l1
+[5.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mariem/ros2_ws/build/audio_play': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_play
+[5.500s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_play)
+[5.500s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play' for CMake module files
+[5.500s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play' for CMake config files
+[5.502s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mariem/ros2_ws/build/audio_play' returned '0': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_play
+[5.505s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_play', 'cmake_prefix_path')
+[5.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/cmake_prefix_path.ps1'
+[5.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/cmake_prefix_path.dsv'
+[5.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/cmake_prefix_path.sh'
+[5.516s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/lib'
+[5.516s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_play', 'ld_library_path_lib')
+[5.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/ld_library_path_lib.ps1'
+[5.521s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/ld_library_path_lib.dsv'
+[5.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/ld_library_path_lib.sh'
+[5.530s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/bin'
+[5.530s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_play', 'path')
+[5.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/path.ps1'
+[5.543s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/path.dsv'
+[5.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/path.sh'
+[5.548s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/lib/pkgconfig/audio_play.pc'
+[5.548s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/lib/python3.10/site-packages'
+[5.548s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/bin'
+[5.548s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_play', 'pythonscriptspath')
+[5.549s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/pythonscriptspath.ps1'
+[5.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/pythonscriptspath.dsv'
+[5.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/pythonscriptspath.sh'
+[5.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.ps1'
+[5.564s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.dsv'
+[5.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.sh'
+[5.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.bash'
+[5.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.zsh'
+[5.592s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mariem/ros2_ws/install/audio_play/share/colcon-core/packages/audio_play)
+[5.595s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(audio_play)
+[5.595s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play' for CMake module files
+[5.595s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play' for CMake config files
+[5.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_play', 'cmake_prefix_path')
+[5.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/cmake_prefix_path.ps1'
+[5.605s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/cmake_prefix_path.dsv'
+[5.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/cmake_prefix_path.sh'
+[5.614s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/lib'
+[5.614s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_play', 'ld_library_path_lib')
+[5.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/ld_library_path_lib.ps1'
+[5.623s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/ld_library_path_lib.dsv'
+[5.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/ld_library_path_lib.sh'
+[5.636s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/bin'
+[5.636s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_play', 'path')
+[5.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/path.ps1'
+[5.636s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/path.dsv'
+[5.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/path.sh'
+[5.649s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/lib/pkgconfig/audio_play.pc'
+[5.649s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/lib/python3.10/site-packages'
+[5.649s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/audio_play/bin'
+[5.649s] Level 1:colcon.colcon_core.shell:create_environment_hook('audio_play', 'pythonscriptspath')
+[5.651s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/pythonscriptspath.ps1'
+[5.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/pythonscriptspath.dsv'
+[5.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/mariem/ros2_ws/install/audio_play/share/audio_play/hook/pythonscriptspath.sh'
+[5.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.ps1'
+[5.669s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.dsv'
+[5.673s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.sh'
+[5.674s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.bash'
+[5.675s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/audio_play/share/audio_play/package.zsh'
+[5.678s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mariem/ros2_ws/install/audio_play/share/colcon-core/packages/audio_play)
+[5.685s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/mariem/ros2_ws/src/audio_common/sound_play' with build type 'ament_cmake'
+[5.685s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/mariem/ros2_ws/src/audio_common/sound_play'
+[5.685s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.685s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/mariem/ros2_ws/build/sound_play': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mariem/ros2_ws/src/audio_common/sound_play -DCMAKE_INSTALL_PREFIX=/home/mariem/ros2_ws/install/sound_play
+[13.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/mariem/ros2_ws/build/sound_play' returned '1': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/mariem/ros2_ws/src/audio_common/sound_play -DCMAKE_INSTALL_PREFIX=/home/mariem/ros2_ws/install/sound_play
+[13.832s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sound_play)
+[13.832s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/sound_play' for CMake module files
+[13.832s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/sound_play' for CMake config files
+[13.833s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/sound_play/bin'
+[13.833s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/sound_play/lib/pkgconfig/sound_play.pc'
+[13.833s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/sound_play/lib/python3.10/site-packages'
+[13.833s] Level 1:colcon.colcon_core.environment:checking '/home/mariem/ros2_ws/install/sound_play/bin'
+[13.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/sound_play/share/sound_play/package.ps1'
+[13.833s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/mariem/ros2_ws/install/sound_play/share/sound_play/package.dsv'
+[13.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/sound_play/share/sound_play/package.sh'
+[13.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/sound_play/share/sound_play/package.bash'
+[13.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/mariem/ros2_ws/install/sound_play/share/sound_play/package.zsh'
+[13.834s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/mariem/ros2_ws/install/sound_play/share/colcon-core/packages/sound_play)
+[13.840s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.840s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.840s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[13.840s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.949s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.949s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.949s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[14.355s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[14.356s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mariem/ros2_ws/install/local_setup.ps1'
+[14.371s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mariem/ros2_ws/install/_local_setup_util_ps1.py'
+[14.384s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mariem/ros2_ws/install/setup.ps1'
+[14.392s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mariem/ros2_ws/install/local_setup.sh'
+[14.394s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/mariem/ros2_ws/install/_local_setup_util_sh.py'
+[14.398s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mariem/ros2_ws/install/setup.sh'
+[14.404s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mariem/ros2_ws/install/local_setup.bash'
+[14.418s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mariem/ros2_ws/install/setup.bash'
+[14.437s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/mariem/ros2_ws/install/local_setup.zsh'
+[14.445s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/mariem/ros2_ws/install/setup.zsh'

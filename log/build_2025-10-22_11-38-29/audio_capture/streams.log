@@ -1,0 +1,36 @@
+[0.072s] Invoking command in '/home/mariem/ros2_ws/build/audio_capture': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_capture -- -j1 -l1
+[0.710s] [ 50%] Built target audio_capture
+[0.832s] [100%] Built target audio_capture_node
+[0.866s] Invoked command in '/home/mariem/ros2_ws/build/audio_capture' returned '0': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mariem/ros2_ws/build/audio_capture -- -j1 -l1
+[0.878s] Invoking command in '/home/mariem/ros2_ws/build/audio_capture': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_capture
+[0.911s] -- Install configuration: ""
+[0.924s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/lib/audio_capture/audio_capture_node
+[0.928s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/bin/audio_capture_node
+[0.931s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/lib/libaudio_capture.so
+[0.933s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch
+[0.935s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture_to_file.launch.xml
+[0.935s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture_to_file.launch.py
+[0.936s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture_wave.launch.xml
+[0.936s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture.launch.xml
+[0.936s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture.launch.py
+[0.936s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/launch/capture_wave.launch.py
+[0.936s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/library_path.sh
+[0.936s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/library_path.dsv
+[0.940s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/ament_index/resource_index/package_run_dependencies/audio_capture
+[0.940s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/ament_index/resource_index/parent_prefix_path/audio_capture
+[0.942s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/ament_prefix_path.sh
+[0.942s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/ament_prefix_path.dsv
+[0.944s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/path.sh
+[0.944s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/environment/path.dsv
+[0.947s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/local_setup.bash
+[0.949s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/local_setup.sh
+[0.949s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/local_setup.zsh
+[0.949s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/local_setup.dsv
+[0.949s] -- Installing: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.dsv
+[0.949s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/ament_index/resource_index/packages/audio_capture
+[0.949s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/ament_index/resource_index/rclcpp_components/audio_capture
+[0.949s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/cmake/ament_cmake_export_libraries-extras.cmake
+[0.957s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/cmake/audio_captureConfig.cmake
+[0.958s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/cmake/audio_captureConfig-version.cmake
+[0.958s] -- Up-to-date: /home/mariem/ros2_ws/install/audio_capture/share/audio_capture/package.xml
+[0.958s] Invoked command in '/home/mariem/ros2_ws/build/audio_capture' returned '0': AMENT_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mariem/ros2_ws/install/audio_common_msgs:/home/mariem/ros2_audio_ws/install/audio_common_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/mariem/ros2_ws/install/audio_common_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mariem/ros2_ws/install/audio_common_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mariem/ros2_ws/build/audio_capture
