@@ -67,28 +67,25 @@ class AudioPublisher(Node):
         self.get_logger().info(f"🎙️ Acquisizione avviata con {self.channels} canali.")
         self.get_logger().info("5")
     def audio_stream_callback(self, indata, frames, time, status):
-        """Funzione chiamata da sounddevice ogni volta che un blocco è pronto.""" 
-        if status: 
-        # Qui gestiamo l'eventuale warning di overflow dal driver 
-            self.get_logger().warn(f"Buffer audio status warning: {status}") 
-            
-        # La logica di demultiplazione rimane identica 
+        """Funzione chiamata da sounddevice ogni volta che un blocco è pronto."""
+        if status:
+        # Qui gestiamo l'eventuale warning di overflow dal driver
+            self.get_logger().warn(f"Buffer audio status warning: {status}")
+        # La logica di demultiplazione rimane identica
         for i in range(self.channels):
-            # indata è il blocco di dati, frames è il numero di campioni 
-            channel_data = indata[:, i] 
-            
-            # Pubblicazione Audio Stream (AudioData) 
-            audio_msg = AudioData() 
-            audio_msg.data = channel_data.tobytes() 
-            self.audio_stream_publishers[i].publish(audio_msg) 
-            
-            # Pubblicazione Audio Info (AudioInfo) 
-            info_msg = AudioInfo() 
-            info_msg.sample_rate = self.sample_rate 
-            info_msg.channels = 1 
-            info_msg.sample_format = "float32" 
-            info_msg.coding_format = "PCM" 
-            self.audio_info_publishers[i].publish(info_msg) 
+            # indata è il blocco di dati, frames è il numero di campioni
+            channel_data = indata[:, i]
+            # Pubblicazione Audio Stream (AudioData)
+            audio_msg = AudioData()
+            audio_msg.data = channel_data.tobytes()
+            self.audio_stream_publishers[i].publish(audio_msg)
+            # Pubblicazione Audio Info (AudioInfo)
+            info_msg = AudioInfo()
+            info_msg.sample_rate = self.sample_rate
+            info_msg.channels = 1
+            info_msg.sample_format = "float32"
+            info_msg.coding_format = "PCM"
+            self.audio_info_publishers[i].publish(info_msg)
 
 
 

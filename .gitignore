@@ -1,0 +1,11 @@
+# Cartelle di build e log ROS 2/Colcon 
+/build/
+/install/
+/log/
+# File generati da Python 
+*.pyc 
+__pycache__/ 
+# File di sistema macOS/Windows 
+.DS_Store 
+Thumbs.db
+ 

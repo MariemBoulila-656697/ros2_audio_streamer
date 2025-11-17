@@ -17,14 +17,15 @@ class AudioSubscriber(Node):
         self.declare_parameter('base_info_topic', "audio_info")
         self.declare_parameter('output_directory', "recorded_audio")
         self.declare_parameter('output_base_name', "output_mic")
-	
-	#prende i parametri dal file yaml se non le trova usa quelli de default 
+        self.declare_parameter('save_to_disk', True)
+	#prende i parametri dal file yaml se non le trova usa quelli de default
         self.sample_rate = self.get_parameter('sample_rate').value
         self.channels = self.get_parameter('channels').get_parameter_value().integer_value
         self.base_stream_topic = self.get_parameter('base_stream_topic').value
         self.base_info_topic = self.get_parameter('base_info_topic').value
         self.output_directory = self.get_parameter('output_directory').value
         self.output_base_name = self.get_parameter('output_base_name').value
+        self.save_to_disk = self.get_parameter('save_to_disk').value
 
         # --- Strutture Dati per la Registrazione ---
         # Lista di buffer per immagazzinare i dati (bytes) di ogni singolo microfono
@@ -61,6 +62,7 @@ class AudioSubscriber(Node):
             self.get_logger().info(f" In ascolto su Stream: {stream_topic} e Info: {info_topic}")
 
         self.get_logger().info(f" Subscriber pronto. Premi CTRL+C per salvare {self.channels} file audio.")
+
 
     def info_callback(self, msg, mic_index):
         # Riceve le info ma non fa nulla di essenziale, serve per la tracciabilità
@@ -111,7 +113,20 @@ def main(args=None):
     except KeyboardInterrupt:
         node.get_logger().info("Subscriber interrotto. Avvio salvataggio file...")
     finally:
+<<<<<<< HEAD
         node.save_audio_files()  # CHIAMATA ALLA FUNZIONE DI SALVATAGGIO
+=======
+        if node.save_to_disk: 
+            node.get_logger().info("💾 Salvataggio dei file WAV...") 
+            # Assicurati che il nome della tua funzione di salvataggio sia 'save_all_waves' 
+            node.save_all_waves() 
+            node.get_logger().info("✅ Salvataggio completato.") 
+            
+        else: 
+            node.get_logger().info("🚫 Salvataggio omesso (SAVE=false).") 
+    
+        
+>>>>>>> 94c91c2 (COMMIT)
         node.destroy_node()
         rclpy.shutdown()
 

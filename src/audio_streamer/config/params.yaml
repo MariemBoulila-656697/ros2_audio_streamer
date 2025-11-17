@@ -18,6 +18,7 @@ audio_publisher:
 
 audio_subscriber:
   ros__parameters:
+    save_to_disk: true
     # Parametri operativi
     #sample_rate: 44100
     sample_rate: 48000
