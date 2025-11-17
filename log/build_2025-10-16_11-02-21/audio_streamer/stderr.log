@@ -1,5 +1,0 @@
-  File "/home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages/audio_streamer/audio_subscriber.py", line 13
-    self.declare_parameter('output_device_index', -1) self.output_device_index = self.get_parameter('output_device_index').get_parameter_value().integer_value 
-                                                      ^^^^
-SyntaxError: invalid syntax
-

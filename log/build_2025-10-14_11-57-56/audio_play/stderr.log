@@ -1,4 +1,0 @@
-[01m[K/home/mariem/ros2_ws/src/audio_common/audio_play/src/audio_play_node.cpp:[m[K In static member function ‘[01m[Kstatic void audio_play::AudioPlayNode::cb_newpad(GstElement*, GstPad*, gpointer)[m[K’:
-[01m[K/home/mariem/ros2_ws/src/audio_common/audio_play/src/audio_play_node.cpp:158:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kdecodebin[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
-  158 |      static void cb_newpad ([01;35m[KGstElement *decodebin[m[K, GstPad *pad,
-      |                             [01;35m[K~~~~~~~~~~~~^~~~~~~~~[m[K

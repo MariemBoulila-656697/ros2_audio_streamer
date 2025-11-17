@@ -1,8 +1,0 @@
-[0.518s] Invoking command in '/home/mariem/ros2_ws/build/audio_streamer': PYTHONPATH=/home/mariem/ros2_ws/build/audio_streamer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/mariem/ros2_ws/build/audio_streamer/build
-[0.686s] usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
-[0.686s]    or: setup.py --help [cmd1 cmd2 ...]
-[0.686s]    or: setup.py --help-commands
-[0.686s]    or: setup.py cmd --help
-[0.686s] 
-[0.686s] error: option --uninstall not recognized
-[0.701s] Invoked command in '/home/mariem/ros2_ws/build/audio_streamer' returned '1': PYTHONPATH=/home/mariem/ros2_ws/build/audio_streamer/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/mariem/ros2_ws/install/audio_streamer/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/mariem/ros2_ws/build/audio_streamer/build

@@ -13,6 +13,10 @@ def generate_launch_description():
     params_file = os.path.join(pkg_share_dir, 'config', 'params.yaml')
 
     # 3. Definizione del nodo Publisher
+<<<<<<< HEAD
+    # L'eseguibile 'audio_pub' è quello definito nel  setup.py
+=======
+>>>>>>> 7f2a302 (aggiorna)
     audio_publisher_node = Node(
         package=package_name,
         executable='audio_pub',
