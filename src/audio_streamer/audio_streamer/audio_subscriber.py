@@ -113,9 +113,6 @@ def main(args=None):
     except KeyboardInterrupt:
         node.get_logger().info("Subscriber interrotto. Avvio salvataggio file...")
     finally:
-<<<<<<< HEAD
-        node.save_audio_files()  # CHIAMATA ALLA FUNZIONE DI SALVATAGGIO
-=======
         if node.save_to_disk: 
             node.get_logger().info("💾 Salvataggio dei file WAV...") 
             # Assicurati che il nome della tua funzione di salvataggio sia 'save_all_waves' 
@@ -124,9 +121,7 @@ def main(args=None):
             
         else: 
             node.get_logger().info("🚫 Salvataggio omesso (SAVE=false).") 
-    
-        
->>>>>>> 94c91c2 (COMMIT)
+			
         node.destroy_node()
         rclpy.shutdown()
 
