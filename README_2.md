@@ -71,3 +71,9 @@ colcon build
 source ~/ros2_ws/install/setup.bash
 ros2 launch audio_streamer streaming_launch.py
 ```
+Alcuni pacchetti come sound play potrebbero far nascere errore in fase di build quindi fare 
+```
+colcon build --packages-select audio_streamer
+source ~/ros2_ws/install/setup.bash
+ros2 launch audio_streamer streaming_launch.py
+```
