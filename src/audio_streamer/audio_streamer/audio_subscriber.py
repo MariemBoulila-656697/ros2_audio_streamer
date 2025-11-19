@@ -116,7 +116,7 @@ def main(args=None):
         if node.save_to_disk: 
             node.get_logger().info("💾 Salvataggio dei file WAV...") 
             # Assicurati che il nome della tua funzione di salvataggio sia 'save_all_waves' 
-            node.save_all_waves() 
+            node.save_audio_files() 
             node.get_logger().info("✅ Salvataggio completato.") 
             
         else: 
